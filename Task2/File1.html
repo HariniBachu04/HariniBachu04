@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grocery Delivery Application</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Grocery Delivery Application</h1>
+        <form id="orderForm">
+            <fieldset>
+                <legend>Order Your Groceries:</legend>
+                <div class="item">
+                    <label for="item1">Apples ($3.00 per lb):</label>
+                    <input type="number" id="item1" name="item1" min="0" step="1" placeholder="Enter lbs">
+                </div>
+                <div class="item">
+                    <label for="item2">Bananas ($1.00 per lb):</label>
+                    <input type="number" id="item2" name="item2" min="0" step="1" placeholder="Enter lbs">
+                </div>
+                <div class="item">
+                    <label for="item3">Carrots ($2.00 per lb):</label>
+                    <input type="number" id="item3" name="item3" min="0" step="1" placeholder="Enter lbs">
+                </div>
+                <div class="item">
+                    <label for="item4">Milk ($2.50 per gallon):</label>
+                    <input type="number" id="item4" name="item4" min="0" step="1" placeholder="Enter gallons">
+                </div>
+                <button type="button" onclick="calculateTotal()">Calculate Total</button>
+            </fieldset>
+        </form>
+        <div id="result"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
